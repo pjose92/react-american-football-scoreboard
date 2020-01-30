@@ -31,11 +31,11 @@ const homeFieldScore = () => {
 }
 
 const awayTouchDown = () => {
-  setVisitorScore(homeScore + 7);
+  setVisitorScore(visitorScore + 7);
 }
 
 const awayFieldScore = () => {
-  setVisitorScore(homeScore + 3);
+  setVisitorScore(visitorScore + 3);
 }
 
 // setTimeout( () => {  
@@ -63,6 +63,8 @@ function reset() {
   setTenthSeconds(0)
   setSeconds(0);
   setIsActive(false);
+  setHomeScore(0);
+  setVisitorScore(0);
 }
   
 //Minute counter
